@@ -1,0 +1,71 @@
+#header .container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Assurez-vous que .absolute prend toute la taille du header */
+#header .absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-shape1, .bg-shape2 {
+    position: absolute;
+    border-radius: 50%; /* Change to 50% to ensure a circular shape */
+}
+
+.bg-shape1 {
+    width: 400px;
+    height: 400px;
+    animation: one 10s infinite;
+}
+
+.bg-shape2 {
+    width: 300px;
+    height: 300px;
+    animation: two 10s infinite;
+}
+
+/* Ajustement des animations pour se déplacer dans toute la zone */
+@keyframes one {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-200px, 200px); }
+    50% { transform: translate(200px, 200px); }
+    75% { transform: translate(200px, -200px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes two {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100px, 100px); }
+    50% { transform: translate(-100px, 100px); }
+    75% { transform: translate(-100px, -100px); }
+    100% { transform: translate(0, 0); }
+}
+
+.opacity-50 {
+    opacity: 0.5;
+}
+
+.bg-blur {
+    filter: blur(90px);
+}
+
+.bg-primary {
+    background-color: rgb(30, 0, 255);
+}
+
+.bg-teal {
+    background-color: rgb(255, 72, 173);
+}
+
+.bg-purple {
+    background-color: rgb(140, 0, 215);
+}

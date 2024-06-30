@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="background_gradient.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
+</head>
+<body>
+
+    <!--  ---------------------- HEADER ---------------------- -->
+  
+    <div id="header">
+            <div class="absolute">
+                <div class="absolute isnet-0 justify-center">
+                    <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+                    <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+                    <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+                </div>
+            </div>
+            <div class="container">
+            <nav>
+                <ul>
+                    <li><img src="" alt="">Logo</li>
+                    <li class="hideOnMobile"><a href="#about">à propos</a></li>
+                    <li class="hideOnMobile"><a href="#competences">compétences</a></li>
+                    <li class="hideOnMobile"><a href="#projects">projets</a></li>
+                    <li class="hideOnMobile"><a href="#contact">contact</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+
+            <div class="header-intro">
+                <p class="text-line">Développement web </p>
+                <h1>
+                    Bonjour, Je suis <span class="auto-type"></span> .
+                </h1>
+                <p class="line-height">Bienvenue !</p>
+                <p>
+                    Jeune étudiante en développement web, je vous invite à <br> explorer mon portfolio, témoin de mes réalisations .
+                </p>
+
+                <div class="header-bottom">
+                    <button>Téléchargez mon Cv <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000"><path d="M360-200v-80h264L160-744l56-56 464 464v-264h80v400H360Z"/></svg> </button>
+                    <p class="text-line2">Ile-de-France, <br> (Région de France)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sidebar Responsive -->
+    <ul class="sidebar">
+        <li onclick="hideSidebar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><img src="" alt="">Logo</li>
+        <li><a href="#about">à propos</a></li>
+        <li><a href="#competences">compétences</a></li>
+        <li><a href="#projects">projets</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+    <!-- Sidebar Responsive END -->
+
+    <!--  ---------------------- END HEADER ---------------------- -->
+
+
+    <script src="responsive_navbar.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings : ["Ornella", "étudiante", "développeuse web"],
+            typeSpeed : 150,
+            backSpeed : 50,
+            loop : true
+        })
+    </script>
+
+</body>
+</html>
